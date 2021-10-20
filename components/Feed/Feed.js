@@ -1,4 +1,4 @@
-function index() {
+function Feed() {
   return (
     <div>
       <h1>I am the FEEEEEEEED</h1>
@@ -6,4 +6,4 @@ function index() {
   );
 }
 
-export { index };
+export { Feed };
