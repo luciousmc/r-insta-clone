@@ -7,11 +7,12 @@ import {
   PaperAirplaneIcon,
   MenuIcon,
 } from '@heroicons/react/outline';
+import { HomeIcon } from '@heroicons/react/solid';
 
 function Header() {
   return (
     <header>
-      <div className='flex justify-between bg-white max-w-6xl'>
+      <div className='flex justify-between bg-white max-w-6xl lg:mx-auto'>
         {/* Left */}
         <div className='relative hidden w-24 lg:inline-grid cursor-pointer'>
           <Image
@@ -40,7 +41,17 @@ function Header() {
             className='bg-gray-50 block w-full pl-10 sm:text-sm border-gray-300 rounded-md focus:ring-black focus:border-black'
           />
         </div>
+
         {/* Right */}
+        <div className='flex items-center justify-end space-x-4'>
+          <HomeIcon className='navBtn' />
+          <MenuIcon className='h-6 md:hidden cursor-pointer' />
+
+          <PaperAirplaneIcon className='navBtn' />
+          <PlusCircleIcon className='navBtn' />
+          <UserGroupIcon className='navBtn' />
+          <HeartIcon className='navBtn' />
+        </div>
       </div>
     </header>
   );
